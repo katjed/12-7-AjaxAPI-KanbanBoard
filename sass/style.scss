@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i);
+
+$font: 'Open Sans', sans-serif;
+$white: #fff;
+$orange: #e29663;
+$green-light: #99e5c5;
+$green-dark: #54a885;
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: $font;
+	background-color: $orange;  
+}
+.board {
+	text-align: center;
+
+	h1 {
+		text-align: center;
+		font-size: 45px;
+		color: #fff;
+		text-transform: uppercase;  
+		text-shadow: 1px 1px 1px #000;
+		padding: 0 10px;
+	}
+	.create-column {
+		font-size: 20px;
+		font-weight: bold;
+		padding: 10px 15px;
+		color: white;
+		background-color: $green-dark;
+		text-shadow: 1px 1px 1px #000; 
+		border-radius: 10px;  
+		margin-bottom: 20px;
+		transition: ease-in-out .3s;
+	
+		&:hover { 
+			transform: scale(1.1);
+			cursor: pointer;
+		}
+	}
+	.column-container {
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	
+		.column {
+			width: 400px;   
+			min-height: 300px;
+			text-align: left;
+			margin: 10px;
+			padding: 15px;
+			background-color: $green-light;
+			border: 5px solid $green-dark;
+			border-radius: 10px;
+			box-shadow: 1px 1px 1px #444;  
+
+			.column-title {
+				text-align: center;
+				font-size: 25px;
+				text-transform: uppercase;
+				padding: 10px 15px;
+				border: 2px solid $green-dark;
+				border-radius: 10px;
+				margin-bottom: 10px;
+			}
+			.btn-delete { 
+				width: 35px;
+				height: 35px;  
+				line-height: 30px;
+				font-size: 16px;
+				background-color: #fff;  
+				border-radius: 5px;
+				outline: none;
+				margin: 10px 15px 10px 10px;
+				transition: ease-in-out .3s;
+				float: left;
+
+				&:hover {
+					transform: scale(1.1);
+					cursor: pointer;
+				}
+			}
+			.add-card {
+				height: 35px;
+				line-height: 30px;
+				font-size: 16px;
+				font-weight: bold;
+				color: #fff;
+				background-color: $green-dark;
+				text-shadow: 1px 1px 1px #000;
+				border-radius: 5px;
+				outline: none;
+				transition: ease-in-out .3s;
+				margin: 10px 0;
+			
+				&:hover {
+					transform: scale(1.1);
+					cursor: pointer;
+				}
+			}
+			.column-card-list {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				min-height: 54px;
+			
+				.card {
+					padding: 0;
+					border: dashed 1px $green-dark;
+					border-radius: 10px;
+					margin-top: 10px;
+
+					.card-description {
+						margin-right: 10px;
+						margin-left: 60px;
+						font-size: 16px;
+					}
+				}			
+				.card-placeholder {
+					border: dashed 1px $orange;
+				}
+			}
+		}
+	}
+}
+
+	
