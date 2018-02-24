@@ -19,7 +19,7 @@
     "watch": "npm-run-all build -p watch:*",
     "helper": "npm run build-dev:sass && npm run build:autoprefixer",
     "watch:sassprefixer": "onchange -d 100 sass/ -- npm run helper",
-    "watch:browser-sync": "browser-sync start --browser \"chrome\" --server --files css/*.css *.html"
+    "watch:browser-sync": "browser-sync start --server --files css/*.css *.html --browser \"chrome\""
   },
   "keywords": [],
   "author": "",
