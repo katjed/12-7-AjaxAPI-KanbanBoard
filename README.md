@@ -1,3 +1,3 @@
-task-12-7
+12-7-AjaxAPI-KanbanBoard
 
-https://katjed.github.io/task-12-7/
+https://katjed.github.io/12-7-AjaxAPI-KanbanBoard/
